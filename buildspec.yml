@@ -9,7 +9,8 @@ phases:
     commands:
      - echo Build started on `date`
      - gradle build
+     - gradlew war
 artifacts:
   type: zip
   files:
-    - 'build/libs/*.jar'
+    - 'build/libs/*.war'
